@@ -38,7 +38,7 @@ jobs:
       - name: Test
         env:
           GANDI_URL: https://api.sandbox.gandi.net
-          GANDI_KEY: ${{ secrets.GANDI_SANDBOX_KEY }}
+          GANDI_PERSONAL_ACCESS_TOKEN: ${{ secrets.GANDI_SANDBOX_PERSONAL_ACCESS_TOKEN }}
         run: |
           make testacc
 
